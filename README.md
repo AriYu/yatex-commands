@@ -8,7 +8,7 @@ Ctrl-c Ctrl-t j
 ## section型補完（sectionとか）
 
 ```bash
-// [Ctrl]押しながら[c]押して[s]を押す
+// [Ctrl]押しながら[c]押して[c]は離して[s]を押す
 Ctrl-c Ctrl-s
 ```
 
@@ -36,7 +36,7 @@ Ctrl-c Ctrl-s
 ## begin型補完（数式や画像、表、リストなど）
 
 ```bash
-// [Ctrl]押しながら[c]押して[b]を押す
+// [Ctrl]押しながら[c]押して[c]は離して[b]を押し，全部離して[space]を押す
 Ctrl-c Ctrl-b [Space]
 ```
 
