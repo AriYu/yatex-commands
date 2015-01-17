@@ -30,6 +30,8 @@ Ctrl-c Ctrl-s
 | 節 | section | 使うのはここから|
 | 小節 | subsection | |
 | 少々節 | subsection | |
+| 図や表の参照番号 | ref | 下の方に詳しい説明|
+| 数式の参照番号 | eqref | 同上 |
 
 ## begin型補完（数式や画像、表、リストなど）
 
@@ -51,11 +53,13 @@ Begin environment(default xxx):
 
 |入力したい | 入力するもの | 備考 |
 |---|---|---|
-| 画像 | figure | |
+| 画像 | figure | 下のコードをコピペが良い |
 | 数式 | eqnarray | 複数行の数式が行けるので実質これ|
-| 箇条書き | itemize | |
+| 箇条書き | itemize | 詳しくはググる|
+| 表 | | 下のコードをコピる|
 
-画像の挿入に関しては以下のコードをコピペするのが速い．
+
+画像の挿入用
 
 ```tex
 \begin{figure}[htbp]
@@ -64,6 +68,27 @@ Begin environment(default xxx):
 	\end{center}
 	\caption{画像の説明}
 \end{figure}
+```
+
+表の挿入用
+
+```tex
+\begin{table}[bp]
+	\caption{表の説明}
+	\begin{center}
+  		\begin{tabular}{|c|c|c|c|c|c|}
+  			\hline
+			時間[s] & 入力電圧[V] & 出力角度[deg] & 時間[s] & 入力電圧[V] & 出力角度[deg]\\ 
+  			\hline
+0.00 & 0.00 & 0.00 & 3.00 & 0.00 & 57.89 \\
+0.10 & 1.83 & 9.60 & 3.10 & 0.00 & 57.89 \\
+0.20 & 1.45 & 19.56 & 3.20 & 0.00 & 57.89 \\
+0.30 & 1.15 & 27.47 & 3.30 & 0.00 & 57.89 \\
+2.90 & 0.00 & 57.89 & 5.90 & 0.00 & 57.95 \\
+			\hline
+ 		\end{tabular}
+	\end{center}
+\end{table}
 ```
 
 ## 参照について
@@ -90,6 +115,8 @@ Ctrl-c Ctrl-s
 ```
 
 もし`(default documentclass)`が`(default ref)`になっていればそのまま`[Enter]`を押せばおっけい．
+
+ちなみに数式の参照番号を入れる場合には`eqref`を使うと良い．
 
 下の様にキャプション一覧が出てくるので図番号を参照したいキャプション名の上で[Enter]を押す．
 
