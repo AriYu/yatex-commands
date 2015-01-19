@@ -31,7 +31,7 @@ Ctrl-c Ctrl-s
 | 章 | chapter | |
 | 節 | section | 使うのはここから|
 | 小節 | subsection | |
-| 少々節 | subsection | |
+| 少々節 | subsubsection | |
 | 図や表の参照番号 | ref | 下の方に詳しい説明|
 | 数式の参照番号 | eqref | 同上 |
 
